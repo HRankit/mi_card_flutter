@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
               SizedBox(
                 height: 20,
                 width: 40,
+
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ],
               ),
+
               SizedBox(
                 height: 20,
                 width: 40,
