@@ -9,9 +9,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.green.shade500,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50,
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Text(
-                'A STUPID ROBOT',
+                'A BRAVE ROBOT',
                 style: TextStyle(
                   fontFamily: 'Source Sans Pro',
                   color: Colors.teal.shade100,
@@ -37,57 +38,53 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                color: Colors.white,
+              SizedBox(
+                width: 150,
+                height: 20,
+                child: Divider(
+                  height: 2,
+                  color: Colors.teal.shade200,
+                ),
+              ),
+              Card(
+                elevation: 10,
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+ 91 999 999 9999',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontSize: 20,
+                      fontFamily: 'Source Sans Pro',
+                      letterSpacing: 2.5,
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      '+ 91 999-999-9999',
-                      style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontSize: 20,
-                        fontFamily: 'Source Sans Pro',
-                        letterSpacing: 2.5,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
               SizedBox(
                 height: 5,
               ),
-              Container(
-                color: Colors.white,
+              Card(
+                elevation: 10,
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.email,
-                      color: Colors.teal,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'this@that.com',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontSize: 20,
+                      fontFamily: 'Source Sans Pro',
+                      letterSpacing: 2.5,
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      'this@that.com',
-                      style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontSize: 20,
-                        fontFamily: 'Source Sans Pro',
-                        letterSpacing: 2.5,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
